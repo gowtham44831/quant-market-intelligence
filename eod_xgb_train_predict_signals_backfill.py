@@ -34,7 +34,7 @@ DB_CONFIG = {
     "port": int(os.getenv("POSTGRES_PORT", "5432")),
     "dbname": os.getenv("POSTGRES_DB", "stocks"),
     "user": os.getenv("POSTGRES_USER", "postgres"),
-    "password": os.getenv("POSTGRES_PASSWORD", "postgres"),
+    "password": os.getenv("POSTGRES_PASSWORD"),
 }
 
 MODEL_DIR = os.getenv("MODEL_DIR", "/opt/airflow/data/models")

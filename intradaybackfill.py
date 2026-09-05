@@ -7,11 +7,11 @@ import os
 import logging
 
 DB_CONFIG = {
-    "host": "postgres",
-    "dbname": "stocks",
-    "user": "postgres",
-    "password": "postgres",
-    "port": 5432,
+    "host": os.getenv("POSTGRES_HOST", "postgres"),
+    "port": int(os.getenv("POSTGRES_PORT", "5432")),
+    "dbname": os.getenv("POSTGRES_DB", "stocks"),
+    "user": os.getenv("POSTGRES_USER", "postgres"),
+    "password": os.getenv("POSTGRES_PASSWORD"),
 }
 
 API_KEY = os.getenv("MARKET_API_KEY")

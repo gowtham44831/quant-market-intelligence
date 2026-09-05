@@ -22,7 +22,7 @@ DB_CONFIG = {
     "host": os.getenv("POSTGRES_HOST", "postgres"),
     "dbname": os.getenv("POSTGRES_DB", "stocks"),
     "user": os.getenv("POSTGRES_USER", "postgres"),
-    "password": os.getenv("POSTGRES_PASSWORD", "postgres"),
+    "password": os.getenv("POSTGRES_PASSWORD"),
     "port": int(os.getenv("POSTGRES_PORT", 5432)),
 }
 

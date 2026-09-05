@@ -21,7 +21,7 @@ DB_CONFIG = {
     "port": int(os.getenv("POSTGRES_PORT", "5432")),
     "dbname": os.getenv("POSTGRES_DB", "stocks"),
     "user": os.getenv("POSTGRES_USER", "postgres"),
-    "password": os.getenv("POSTGRES_PASSWORD", "postgres"),
+    "password": os.getenv("POSTGRES_PASSWORD"),
 }
 
 RUN_NAME = os.getenv("RULE_BACKTEST_RUN_NAME", "rule_exit_breakout_v1")
