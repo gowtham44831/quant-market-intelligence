@@ -1,0 +1,42 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+stocks.env
+
+# Retired standalone prototype (if copied beneath this repository)
+stock_pipeline.py
+scripts/stock_pipeline.py
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Airflow runtime data and model artifacts
+logs/
+data/
+models/
+*.joblib
+*.pkl
+
+# Local service state
+postgres-data/
+airflow-db-data/
+vault-data/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+
+# Generated reports
+*.log
+coverage.xml
+htmlcov/
